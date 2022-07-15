@@ -1,4 +1,4 @@
-package br.com.generation.projetojava;
+package br.com.gen.projeto;
 
 public class Doacao {
 
