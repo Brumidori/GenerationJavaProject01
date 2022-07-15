@@ -15,16 +15,16 @@ public class larParaTodos {
 		
 	 
 		
-		System.out.println("Como vc gostaria de contribuir? Digite 1 - adoção; 2 - doação; 3 - denúncia." );
+		System.out.println("\nComo vc gostaria de contribuir? \nDigite 1 - adoÃ§Ã£o; 2 - doaÃ§Ã£o; 3 - denÃºncia." );
 		
 		
 		contribuicao = input.nextInt(); 
 		if ( contribuicao == 1) {
 			//adocao gato e cachorro
-			//classe ADOÇÃ‡O ---> 
+			//classe ADOï¿½Ã‡O ---> 
 			//CLASSE CADASTRO ---> Cadastro(); --- > roda a classe cadastro
 			
-			System.out.println("Você gostaria de adotar um ? Digite 1 - dog;  2 - cat.");
+			System.out.println("VocÃª gostaria de adotar um ? Digite 1 - dog;  2 - cat.");
 			 animal = input.nextInt(); 
 			 if (animal == 1) {
 				 //Classe dogs ---> Cachorro();
@@ -34,12 +34,12 @@ public class larParaTodos {
 			 }
 			
 		} else if (contribuicao == 2) {
-			//doação
-			// CLASSE DOAÇÃ‡O ---> METODOS
+			//doaï¿½ï¿½o
+			// CLASSE DOAï¿½Ã‡O ---> METODOS
 			
 			Doacao d1 = new Doacao();
 
-            System.out.println("De que forma você gostaria de contribuir? Digite 1 para Brinquedos, 2 para Ração e 3 para Dinheiro: ");
+            System.out.println("\nDe que forma vocÃª gostaria de contribuir? \nDigite 1 - Brinquedos; 2 - RaÃ§Ã£o; 3 - Dinheiro: ");
             d1.setTipoDoacao(input.nextInt());
 
             int i = (Integer) d1.getTipoDoacao();
@@ -52,14 +52,9 @@ public class larParaTodos {
 			//denuncia
 			
 			//CLASSE DENUNCIA
-			// cai em uma mensagem com informações pra denuncia 
+			// cai em uma mensagem com informaï¿½ï¿½es pra denuncia 
 		}
 		
-	 
-		   
-		   
-		  
-		 
 		   
 	}
 
