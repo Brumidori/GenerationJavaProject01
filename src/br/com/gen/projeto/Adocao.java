@@ -12,7 +12,7 @@ public class Adocao {
 		this.moradia = moradia;
 		
 		
-		return "Seu animal ideal é " + this.tipoDoAnimal[tipoDoAnimal -1] + " " + this.filhoteAdulto[filhoteAdulto - 1] + ".";
+		return "Seu animal ideal é " + this.tipoDoAnimal[(tipoDoAnimal -1)] + " " + this.filhoteAdulto[(filhoteAdulto - 1)] + ".";
 			
 	}
 	
