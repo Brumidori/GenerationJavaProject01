@@ -17,18 +17,18 @@ public class larParaTodos {
 			System.out.println("===================================================================");
 			
 		 
-			
-			System.out.println("\nComo vc gostaria de contribuir? \nDigite 1 - adoção; 2 - doação; 3 - denúncia; 0 - sair." );
-			
-			
+			System.out.println("\nOlá, bem vinde ao Lar para todos! \nDigite '0' para voltar ao Menu inicial.");
+			System.out.println("\nComo vc gostaria de contribuir? \nDigite 1 - Adocao; 2 - Doacao; 3 - Denuncia." );
 			contribuicao = input.nextInt(); 
+			
+			
 			switch ( contribuicao) {
 			case 1:
 				//adocao gato e cachorro
 				//classe ADO�ÇO ---> 
 				//CLASSE CADASTRO ---> Cadastro(); --- > roda a classe cadastro
 				
-				System.out.println("Você gostaria de adotar um ? Digite 1 - dog;  2 - cat.");
+				System.out.println("Voce gostaria de adotar um ? Digite 1 - dog;  2 - cat.");
 				 animal = input.nextInt(); 
 				 if (animal == 1) {
 					 //Classe dogs ---> Cachorro();
@@ -45,7 +45,7 @@ public class larParaTodos {
 				Doacao d1 = new Doacao();
 				
 				//imprime pergunta forma contribuir
-	            System.out.println("\nDe que forma você gostaria de contribuir? \nDigite 1 - Brinquedos; 2 - Ração; 3 - Dinheiro: ");
+	            System.out.println("\nDe que forma voce gostaria de contribuir? \nDigite 1 - Brinquedos; 2 - Racao; 3 - Dinheiro: ");
 	            d1.setTipoDoacao(input.nextInt()); //utiliza o Scanner e setter para inputar dado Inteiro
 
 	            int i = (Integer) d1.getTipoDoacao(); // transforma inteiro em String (método é String)
