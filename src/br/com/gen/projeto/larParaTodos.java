@@ -5,7 +5,7 @@ public class larParaTodos {
 
 	public static void main(String[] args) {
 		
-		int contribuicao = 0, animal = 0 ;
+		int contribuicao = 0;
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("===================================================================");
@@ -24,14 +24,15 @@ public class larParaTodos {
 			//classe ADO�ÇO ---> 
 			//CLASSE CADASTRO ---> Cadastro(); --- > roda a classe cadastro
 			
-			System.out.println("Você gostaria de adotar um ? Digite 1 - dog;  2 - cat.");
-			 animal = input.nextInt(); 
-			 if (animal == 1) {
-				 //Classe dogs ---> Cachorro();
-				 
-			 } else {
-				 //CLASSE GATO --> Gato();			 }
-			 }
+			System.out.println("Voce gostaria de adotar um ? Digite 1 - cachorro;  2 - gato");
+			int animal = input.nextInt(); 
+			System.out.println("Qual seu tipo de moradia ? Digite 1 - apartamento; 2 - casa");
+			int moradia = input.nextInt();
+			System.out.println("Voce prefere um animal? Digite 1 - filhote; 2 - adulto");
+			int filhoteAdulto = input.nextInt();
+			
+			Adocao ad = new Adocao();
+			System.out.println(ad.tipoAnimalMoradia(moradia, animal, filhoteAdulto)); 1
 			
 		} else if (contribuicao == 2) {
 			//doa��o
