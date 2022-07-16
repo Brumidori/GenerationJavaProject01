@@ -1,7 +1,7 @@
 package br.com.gen.projeto;
 import java.util.Scanner;
 
-public class larParaTodos {
+public class Main {
 
 	public static void main(String[] args) {
 		
@@ -21,7 +21,7 @@ public class larParaTodos {
 			
 
 			System.out.println("\nOla, bem vinde ao Lar para todos! \nDigite '0' para sair.");
-			System.out.println("\nComo vc gostaria de contribuir? \nDigite 1 - Adocao; 2 - Doacao; 3 - Denuncia." );
+			System.out.println("\nComo vc gostaria de contribuir? \nDigite 1 - Adocao; 2 - Doacao; 3 - Lar Temporário; 4 - Denuncia." );
 			contribuicao = input.nextInt(); 
 			
 			
@@ -56,7 +56,23 @@ public class larParaTodos {
 	            
 				break;
 				
-			case 3://laco denuncia
+			case 3://laco lar temporario
+				
+				Scanner tc = new Scanner(System.in);
+				Usuario usuarioVariavel = new Usuario();
+				
+				System.out.println("Qual seu nome?\n");
+				usuarioVariavel.setNomeUsuario(tc.nextLine());
+				System.out.println("Voce deseja adotar um gato ou cachorro? \n");
+				usuarioVariavel.setTipoAnimal(tc.nextLine());
+				System.out.println("Digite o local seguro que voçê provera \n ");
+				usuarioVariavel.setLocalSeguro(tc.nextLine());
+				
+				
+				System.out.println("Seu nome e: " + usuarioVariavel.getNomeUsuario());
+				System.out.println("Voce deseja um " + usuarioVariavel.getTipoAnimal());
+				System.out.println(" O seu local sera: " + usuarioVariavel.getLocalSeguro());
+				
 				
 				
 				break;
