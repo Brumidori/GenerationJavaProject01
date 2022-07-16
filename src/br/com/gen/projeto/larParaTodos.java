@@ -17,7 +17,7 @@ public class larParaTodos {
 			System.out.println("===================================================================");
 			
 		 
-			System.out.println("\nOlá, bem vinde ao Lar para todos! \nDigite '0' para voltar ao Menu inicial.");
+			System.out.println("\nOlá, bem vinde ao Lar para todos! \nDigite '0' para sair.");
 			System.out.println("\nComo vc gostaria de contribuir? \nDigite 1 - Adocao; 2 - Doacao; 3 - Denuncia." );
 			contribuicao = input.nextInt(); 
 			
