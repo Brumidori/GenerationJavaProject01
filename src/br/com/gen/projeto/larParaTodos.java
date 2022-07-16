@@ -32,7 +32,7 @@ public class larParaTodos {
 			int filhoteAdulto = input.nextInt();
 			
 			Adocao ad = new Adocao();
-			System.out.println(ad.tipoAnimalMoradia(moradia, animal, filhoteAdulto)); 1
+			System.out.println(ad.tipoAnimalMoradia(moradia, animal, filhoteAdulto)); 
 			
 		} else if (contribuicao == 2) {
 			//doa��o
