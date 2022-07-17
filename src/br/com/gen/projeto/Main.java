@@ -109,11 +109,11 @@ public class Main {
 				
 			case 5:
 				
-				/*Denuncia c1 = new Denuncia();
+				Denuncia2 c1 = new Denuncia2();
 
                 c1.status();
                 c1.dados();
-                c1.protocolo();*/
+               
                 
                break;
 
