@@ -15,10 +15,10 @@ public class Doacao {
 	}
 
 	// funcao - metodo
-	public void tipo(int b) {
+	public static String tipo (int tipoDoacao) {
 		String resposta;
 		
-		switch (b) {
+		switch (tipoDoacao) {
 		case 1:
 			resposta = "\nToda forma de contribuir e valida, temos certeza que seu brinquedo fara a vida de um Pet mais feliz."
 					+ "\nPara entregar o brinquedo visite nossa sede no endereço X, das 8h00 as 17h00."
@@ -39,7 +39,7 @@ public class Doacao {
 			default:
 				resposta = "Opção inválida. Por gentileza, reinicie o programa.";
 		}
-		System.out.println(resposta);
+		return resposta;
 
 	}
 }

@@ -42,15 +42,16 @@ public class Main {
 				 break;
 				
 			case 2: // laco doacao
-				//cria objeto d1
 				
-				Doacao d1 = new Doacao();
+				Doacao d1 = new Doacao();//cria objeto d1
 				
 				//imprime pergunta forma contribuir
 	            System.out.println("\nDe que forma voce gostaria de contribuir? \nDigite 1 - Brinquedos; 2 - Racao; 3 - Dinheiro: ");
-	            int o = input.nextInt();
-	            d1.setTipoDoacao(o); //utiliza o Scanner e setter para inputar dado Inteiro
-
+	            d1.setTipoDoacao(input.nextInt()); //utiliza o Scanner e setter para inputar dado Inteiro
+	            
+	            int i = (Integer) d1.getTipoDoacao();
+	            System.out.println(Doacao.tipo(i));
+	            
 				break;
 				
 			case 3://laco lar temporario
