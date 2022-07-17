@@ -7,7 +7,7 @@ public class Main {
 		
 
 		//variaveis e classe Scanner
-		int t = 1;
+		int t = 1, d = 0;
 		int contribuicao = 0 ;
 		Scanner input = new Scanner(System.in);
 		
@@ -20,7 +20,7 @@ public class Main {
 			
 
 			System.out.println("\nOla, bem vinde ao Lar para todos! \nDigite '0' para sair.");
-			System.out.println("\nComo vc gostaria de contribuir? \nDigite 1 - Adocao; 2 - Doacao; 3 - Lar Temporário; 4 - Trabalhe Conosco; 5 - Denuncia." );
+			System.out.println("\nComo voce gostaria de contribuir? \nDigite 1 - Adocao; 2 - Doacao; 3 - Lar Temporario; 4 - Trabalhe Conosco; 5 - Denuncia." );
 			contribuicao = input.nextInt(); 
 			
 			
@@ -43,6 +43,11 @@ public class Main {
 				
 			case 2: // laco doacao
 				
+				do {
+					
+				System.out.println("Antes de começarmos, poderia me informar seu nome?");
+				String nomeD = input.next();
+				
 				Doacao d1 = new Doacao();//cria objeto d1
 				
 				//imprime pergunta forma contribuir
@@ -51,6 +56,11 @@ public class Main {
 	            
 	            int i = (Integer) d1.getTipoDoacao();
 	            System.out.println(Doacao.tipo(i));
+	            System.out.println("\nMuito Obrigade pela sua contribuicao, " + nomeD + "!");
+	            System.out.println("Caso queira fazer uma nova doacao Digite 1; Para voltar ao menu inicial Digite 2.");
+	            d = input.nextInt();
+	            
+	            	} while (d < 2 && d>=0);
 	            
 				break;
 				
@@ -96,12 +106,20 @@ public class Main {
 				System.out.println(nomeC + ", entraremos em contato através do numero de telefone: " + telefone);
 
 				break;
+				
+			case 5:
+				
+				/*Denuncia c1 = new Denuncia();
+
+                c1.status();
+                c1.dados();
+                c1.protocolo();*/
+                
+               break;
 
 			default:
 				t =0;
 			}
-			
-		
 		
 		} while (t != 0);
 		input.close();
