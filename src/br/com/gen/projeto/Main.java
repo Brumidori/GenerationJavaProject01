@@ -20,7 +20,7 @@ public class Main {
 			
 
 			System.out.println("\nOla, bem vinde ao Lar para todos! \nDigite '0' para sair.");
-			System.out.println("\nComo vc gostaria de contribuir? \nDigite 1 - Adocao; 2 - Doacao; 3 - Lar Temporário; 4 - Denuncia." );
+			System.out.println("\nComo vc gostaria de contribuir? \nDigite 1 - Adocao; 2 - Doacao; 3 - Lar Temporário; 4 - Trabalhe Conosco; 5 - Denuncia." );
 			contribuicao = input.nextInt(); 
 			
 			
@@ -69,6 +69,33 @@ public class Main {
 				
 				break;
 				
+			case 4: // laco trabalhe conosco
+
+				System.out.println("Vamos começar fazendo seu cadastro... ");
+				System.out.println("Digite seu nome: ");
+				String nomeC = input.next();
+				System.out.println("Digite seu telefone para contato: ");
+				String telefone = input.next();
+				System.out.println("Tem preferência de trabalhar com um animal específico? ");
+				System.out.println("Digite 1 se prefere gato ou 2 pra cachorro");
+				int animalPref = input.nextInt();
+
+				if (animalPref == 1) {
+
+					System.out.println("Parabens " + nomeC + " Você escolheu trabalhar com gato");
+
+				}
+
+				else {
+
+					System.out.println("Parabens " + nomeC + " Você escolheu trabalhar com cachorro");
+
+				}
+
+				System.out.println(nomeC + ", entraremos em contato através do numero de telefone: " + telefone);
+
+				break;
+
 			default:
 				t =0;
 			}
