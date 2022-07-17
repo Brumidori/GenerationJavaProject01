@@ -1,18 +1,16 @@
 package br.com.gen.projeto;
 
-public class Usuario {
+public class Usuario extends Pessoa{
 	
-	private String nomeUsuario;
+	
  	private String tipoAnimal;
     private String localSeguro;
     
-
-	public String getNomeUsuario() {
-		return nomeUsuario;
-	}
-
-	public void setNomeUsuario(String nomeUsuario) {
-		this.nomeUsuario = nomeUsuario;
+   
+	public Usuario(String nome, String tipoAnimal, String localSeguro) {
+		super(nome);
+		this.tipoAnimal = tipoAnimal;
+		this.localSeguro = localSeguro;
 	}
 
 	public String getTipoAnimal() {
