@@ -15,7 +15,7 @@ public class Doacao {
 	}
 
 	// funcao - metodo
-	public String tipo(int b) {
+	public void tipo(int b) {
 		String resposta;
 		
 		switch (b) {
@@ -39,7 +39,7 @@ public class Doacao {
 			default:
 				resposta = "Opção inválida. Por gentileza, reinicie o programa.";
 		}
-		return resposta;
+		System.out.println(resposta);
 
 	}
 }
