@@ -43,19 +43,19 @@ public class Main {
 				
 			case 2: // laco doacao
 				
-				do {
-					
-				System.out.println("Antes de começarmos, poderia me informar seu nome?");
-				String nomeD = input.next();
+				System.out.println("Antes de começarmos, poderia me informar seu nome?"); 
+				String nomeD = input.next(); // inputa o nome antes do do-while para nao perguntar toda vez que o laco roda
 				
+				do { // do-while para que a pessoa possa fazer mais de uma doacao sem voltar ao menu inicial
+					
 				Doacao d1 = new Doacao();//cria objeto d1
 				
 				//imprime pergunta forma contribuir
 	            System.out.println("\nDe que forma voce gostaria de contribuir? \nDigite 1 - Brinquedos; 2 - Racao; 3 - Dinheiro: ");
 	            d1.setTipoDoacao(input.nextInt()); //utiliza o Scanner e setter para inputar dado Inteiro
 	            
-	            int i = (Integer) d1.getTipoDoacao();
-	            System.out.println(Doacao.tipo(i));
+	            int i = (Integer) d1.getTipoDoacao(); // utiliza classe Integer para que a String seja lida em int
+	            System.out.println(Doacao.tipo(i)); //imprime o metodo tipo da Classe Doacao
 	            System.out.println("\nMuito Obrigade pela sua contribuicao, " + nomeD + "!");
 	            System.out.println("Caso queira fazer uma nova doacao Digite 1; Para voltar ao menu inicial Digite 2.");
 	            d = input.nextInt();
